@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +11,8 @@
 <body>
   <div class="min-h-screen bg-gradient">
     <!-- Hero Section -->
+    <div id="header"></div>
+
     <header class="container">
       <div class="hero-content">
         <div class="hero-text">
@@ -176,43 +178,16 @@
       </div>
     </section>
 
-    <!-- EXP Section -->
-    <!-- <section>
-      <div class="container">
-        <div style="display: inline-flex; align-items: last baseline;">
+  </div>
 
-          <h2>Other Experiences</h2> <a style="margin-left: 10px;" href=""> All projects </a>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <a href="maamora.html" class="project-link">
-              <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&q=80&w=600"
-                alt="E-commerce App">
-              <div class="project-content">
-                <h3>E-commerce App</h3>
-                <p>A full-featured e-commerce application built with Flutter and Firebase</p>
-              </div>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=600"
-              alt="Social Media App">
-            <div class="project-content">
-              <h3>Social Media App</h3>
-              <p>Social networking platform with real-time chat and media sharing</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
+  <footer>
     <!-- Contact Section -->
     <section class="bg-white">
       <div class="container text-center">
         <h2>Let's Connect</h2>
         <p>I'm always interested in hearing about new projects and opportunities</p>
         <div class="contact-links">
-          <a href="mailto:contact@example.com" class="contact-link">
+          <a href="mailto:mastermajidosse@gmail.com" class="contact-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect width="20" height="16" x="2" y="4" rx="2" />
@@ -220,7 +195,7 @@
             </svg>
             Email Me
           </a>
-          <a href="tel:+1234567890" class="contact-link">
+          <a href="tel:+212694678522" class="contact-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -231,7 +206,25 @@
         </div>
       </div>
     </section>
-  </div>
+  </footer>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+  </script>
 </body>
+
+
 
 </html>

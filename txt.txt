@@ -1,27 +1,8 @@
-
-projects in by details:
-- maamora
-- creaskale
-- gooto 
-- moharik
-- farmly
-- gladly
-- ultras
-- karam
-- qarib
-- skyki
-- yeschallenge
-- marsad
-
 games
-- truth or dare 
-- tarikh 
-- gotaku
-- would you rther
-- blue ball 
-- mono golf 
+- would you rther 
 - math game
 - hockey ice
+mono golf
 
 failure (didn't reach production / removed by google)
 - protestly
